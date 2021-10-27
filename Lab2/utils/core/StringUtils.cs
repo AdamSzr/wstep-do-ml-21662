@@ -25,33 +25,5 @@ namespace CSharp_Utils
 
             return sb.ToString();
         }
-        public static string CreateCSVHeader(object o, char separator = ',')
-        {
-            StringBuilder sb = new StringBuilder();
-            Type t = typeof(Car); // Where obj is object whose properties you need.
-            PropertyInfo[] pi = t.GetProperties();
-            for (int i = 0; i < pi.Length; i++)
-            {
-                sb.Append(pi[i].Name);
-                if (i != pi.Length - 1)
-                    sb.Append(separator);
-            }
-            sb.AppendLine();
-            return sb.ToString();
-        }
-        public static string CreateCSVRow(object o, char separator = ',')
-        {
-            StringBuilder sb = new StringBuilder();
-            Type t = typeof(Car); // Where obj is object whose properties you need.
-            PropertyInfo[] pi = t.GetProperties();
-            for (int i = 0; i < pi.Length; i++)
-            {
-                sb.Append(pi[i].GetValue(o));
-                if (i != pi.Length - 1)
-                    sb.Append(separator);
-            }
-            sb.AppendLine();
-            return sb.ToString();
-        }
     }
 }

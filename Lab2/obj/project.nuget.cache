@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+hZjxm+qD2QaeCWPcRByrUTyfrRv0AQTCpjJbtrXZbnbIzlAn2dZhr7d6m6kKZsZR74EOhlx0/HoS3NzbqU4uw==",
+  "dgSpecHash": "JODGkbZv0fKHAwBJ6T+c4BGeOQ5ZAAQQgNHp3VGhpad2Aqi1JPYD7l6KS2Gb77ujGDUlzblB3IsA7DMREeZm0Q==",
   "success": true,
-  "projectFilePath": "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\lab2\\Lab2.csproj",
+  "projectFilePath": "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\Lab2\\Lab2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adam\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

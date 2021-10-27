@@ -4,6 +4,7 @@ using System.IO;
 using CSharp_Utils;
 using System.Reflection;
 using System.Collections.Generic;
+using System.Text;
 
 public class CsvFormat
 {
@@ -49,4 +50,43 @@ public class CsvFormat
         }
         return sb.ToString();
     }
+
+    public void Save(FileInfo file)
+    {
+        if ((file.Extension != ".csv"))
+            throw new Exception("File that has to be saved does not contain .csv file extension");
+
+        using (FileStream fs = file.OpenWrite())
+        {
+            fs.Write(this.ToString().ConvertToByteArray());
+        }
+    }
+
+    public static string CreateHeader(object o, char separator = ',')
+        {
+            StringBuilder sb = new StringBuilder();
+            Type t = typeof(Car); // Where obj is object whose properties you need.
+            PropertyInfo[] pi = t.GetProperties();
+            for (int i = 0; i < pi.Length; i++)
+            {
+                sb.Append(pi[i].Name);
+                if (i != pi.Length - 1)
+                    sb.Append(separator);
+            }
+            sb.AppendLine();
+            return sb.ToString();
+        }
+        public static string CreateRow(object o, char separator = ',')
+        {
+            StringBuilder sb = new StringBuilder();
+            Type t = typeof(Car); // Where obj is object whose properties you need.
+            PropertyInfo[] pi = t.GetProperties();
+            for (int i = 0; i < pi.Length; i++)
+            {
+                sb.Append(pi[i].GetValue(o));
+                if (i != pi.Length - 1)
+                    sb.Append(separator);
+            }
+            return sb.ToString();
+        }
 }
