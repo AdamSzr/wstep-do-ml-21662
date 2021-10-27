@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\Lab2\\Lab2.csproj": {}
+    "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\lab2\\Lab2.csproj": {}
   },
   "projects": {
-    "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\Lab2\\Lab2.csproj": {
+    "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\lab2\\Lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\Lab2\\Lab2.csproj",
+        "projectUniqueName": "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\lab2\\Lab2.csproj",
         "projectName": "Lab2",
-        "projectPath": "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\Lab2\\Lab2.csproj",
+        "projectPath": "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\lab2\\Lab2.csproj",
         "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\Lab2\\obj\\",
+        "outputPath": "G:\\SZKOLA\\VII_semestr\\wstep-do-ml-21662\\lab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",

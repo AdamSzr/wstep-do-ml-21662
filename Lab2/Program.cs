@@ -12,10 +12,12 @@ using System.Reflection;
 // zapisywanie danych do pliku w formanie CSV (proszę pamietać o właściwych rozszerzeniach plików!),
 // zapisz pliki wynikowe w folderze 'Lab2' i umieść go w repozytorium ♥.
 
+DirectoryInfo outputFileDir = Directory.CreateDirectory("Lab2_Output");
+
 
 string txtData = StringUtils.RandomString(600);
-Console.WriteLine(txtData.Length);
-
+Console.WriteLine(txtData);
+File.OpenWrite(outputFileDir.FullName + "/randomstring.txt").Write(txtData.ConvertToByteArray());
 Car c = new();
 c.Weight=200;
 c.DoorsCount=5;
@@ -26,4 +28,5 @@ CsvFormat csv = CsvFormat.With(StringUtils.CreateCSVHeader(c));
 csv.AddDataRow(StringUtils.CreateCSVRow(c));
 
 
-Console.Write(csv.ToString());
+Console.WriteLine(csv.ToString());
+Console.WriteLine(JsonConvert.SerializeObject(c));
