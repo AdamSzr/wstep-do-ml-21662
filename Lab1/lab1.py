@@ -7,7 +7,7 @@ print("tablica zawierająca 10 zer -> \r\n", zeros)
 
 #%%
 # utwórz tablicę zawierającą 10 piątek,
-fiveteen = np.full(5, 10)
+fiveteen = np.full(10, 5)
 print("tablica zawierająca 10 piatek -> \r\n",fiveteen)
 
 #%%
