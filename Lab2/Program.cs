@@ -81,7 +81,8 @@ DataWriter csvDW = new(csvFile);
 csvDW.Append("\r\n" + CsvFormat.CreateRow(toAppend));
 
 Console.WriteLine("Added new car to csv file.");
-Console.WriteLine("Is last car from file equal to expected -> " + CsvFormat.CreateRow(toAppend) == new DataProvider(csvFile).ReadLine(1 + 150 + 1));
+bool isAppendedCarAtTheEndOfFile = CsvFormat.CreateRow(toAppend) == new DataProvider(csvFile).ReadLine(1 + 150);
+Console.WriteLine("Is last car from file equal to expected -> " + isAppendedCarAtTheEndOfFile);
 
 // =====================================================================
 // napisz program, który zlicza liczbę wierszy tekstu w pliku i wyświetla tę informację,
